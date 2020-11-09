@@ -16,7 +16,7 @@ var express = require("express");
 app.use(function (req, res, next) {
 
     // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Origin', 'https://sm-za-dev.web.app');
 
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
@@ -87,7 +87,7 @@ app.post('/api/postRoute', function(req, res) {
 
 // Initialize our websocket server on port 5000
 http.listen(5000, () => {
-  console.log("started on port 5000");
+  console.log("started on port 5000 yey!");
 });
 
 
